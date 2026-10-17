@@ -1,9 +1,9 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "War Tycoon Hub | تم صنعه من قبل مجهول النازي",
+   Name = "War Tycoon Hub | تم صنعه من قبل متجر GR المتخصص للسكربتات",
    LoadingTitle = "جاري التحميل...",
-   LoadingSubtitle = "RGB المتحرك - ريان العنزي",
+   LoadingSubtitle = "RGB المتحرك - متجر GR",
    ConfigurationSaving = { Enabled = false },
    Discord = { Enabled = false },
    KeySystem = false,
@@ -84,7 +84,7 @@ task.spawn(function()
                         local root = p.Character.HumanoidRootPart
                         root.Size = Vector3.new(HitboxSize, HitboxSize, HitboxSize)
                         root.Transparency = HitboxTransparency
-                        root.Color = CurrentRGB -- لون RGB متحرك للهيتبوكس!
+                        root.Color = CurrentRGB
                         root.Material = Enum.Material.ForceField
                         root.CanCollide = false
                     end
@@ -137,7 +137,6 @@ local function applyESP(player)
             highlight.Enabled = ESPEnabled
             highlight.Parent = character
             
-            -- تحديث لون الـ ESP باستمرار مع لون الـ RGB المتحرك
             task.spawn(function()
                 while highlight and highlight.Parent do
                     highlight.FillColor = CurrentRGB
@@ -410,7 +409,7 @@ MoveTab:CreateSlider({
 })
 
 ---------------------------------------------------------
--- 3. تبويب الانتقال والـ Tycoon (Teleport & Bases)
+-- 3. تبويب الانتقال السريع (Teleport & Bases)
 ---------------------------------------------------------
 local TeleportTab = Window:CreateTab("الانتقال السريع", 4483362458)
 
@@ -534,8 +533,8 @@ ExtraTab:CreateButton({
 
 -- إشعار التشغيل
 Rayfield:Notify({
-   Title = "تم تفعيل ألوان RGB المتحركة بنجاح! 🌈",
-   Content = "تصميم وإضافة ريان العنزي. استمتع بالألوان والميزات الجديدة!",
+   Title = "تم تشغيل سكربت متجر GR بنجاح! 🚀",
+   Content = "تم صنعه من قبل متجر GR المتخصص للسكربتات. استمتع بالميزات!",
    Duration = 5,
    Image = 4483362458,
 })
