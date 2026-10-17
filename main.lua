@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "War Tycoon Hub | تم صنعه من قبل ريان العنزي",
+   Name = "War Tycoon Hub | تم صنعه من قبل مجهول النازي",
    LoadingTitle = "جاري التحميل...",
    LoadingSubtitle = "RGB المتحرك - ريان العنزي",
    ConfigurationSaving = { Enabled = false },
